@@ -1,14 +1,13 @@
-<p align="center">
-  <h1>TURKISH IMAGE CAPTION</h1>
-  <em>Bringing Turkish Images to Life with AI</em><br><br>
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.8%2B-blue.svg"></a>
-  <a href="https://flask.palletsprojects.com/"><img src="https://img.shields.io/badge/Flask-Web%20App-blue"></a>
-  <a href="https://huggingface.co/transformers/"><img src="https://img.shields.io/badge/transformers-HuggingFace-yellow"></a>
-  <br>
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/Flask-000?logo=flask">
-  <img src="https://img.shields.io/badge/HuggingFace-FFD21F?logo=huggingface&logoColor=black">
-</p>
+# TURKISH IMAGE CAPTION
+
+Bringing Turkish Images to Life with AI
+
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-Web%20App-blue)](https://flask.palletsprojects.com/)
+[![Transformers](https://img.shields.io/badge/transformers-HuggingFace-yellow)](https://huggingface.co/transformers/)
+
+Built with the tools and technologies:  
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000?logo=flask) ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21F?logo=huggingface&logoColor=black)
 
 ---
 
