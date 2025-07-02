@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkçe Görsel Açıklama Sistemi</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+    </div>
+
+    <!-- Navbar -->
+    {% include 'navbar.html' %}
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Türkçe Görsel</span>
+                    <span class="gradient-text">Açıklama Sistemi</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Yapay zeka destekli teknoloji ile görsellerinizi Türkçe olarak açıklayın
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="upload-section">
+                <div class="section-header">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h2>Görsel Yükle</h2>
+                </div>
+                
+                <form id="captionForm" enctype="multipart/form-data">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-content">
+                            <i class="fas fa-image upload-icon"></i>
+                            <p class="upload-text">Görseli buraya sürükleyin veya tıklayın</p>
+                            <p class="upload-subtext">PNG, JPG, JPEG formatları desteklenir</p>
+                            <input type="file" id="imageInput" name="image" accept="image/*" required>
+                        </div>
+                    </div>
+
+                    <!-- Image Preview -->
+                    <div class="image-preview" id="imagePreview">
+                        <div class="preview-container">
+                            <img id="previewImg" src="#" alt="Önizleme">
+                            <div class="image-info">
+                                <span id="imageName"></span>
+                                <button type="button" id="removeImage" class="remove-btn">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Settings -->
+                    <div class="settings-section">
+                        <div class="setting-group">
+                            <label for="min_length" class="setting-label">
+                                <i class="fas fa-text-width"></i>
+                                Minimum Açıklama Uzunluğu
+                            </label>
+                            <div class="input-wrapper">
+                                <input type="range" id="min_length" name="min_length" min="6" max="22" value="11" class="range-input">
+                                <span class="range-value" id="lengthValue">11</span>
+                            </div>
+                        </div>
+
+                        <div class="setting-group">
+                            <label for="repetition_penalty" class="setting-label">
+                                <i class="fas fa-cogs"></i>
+                                Tekrar Cezası
+                            </label>
+                            <div class="input-wrapper">
+                                <input type="range" id="repetition_penalty" name="repetition_penalty" min="1.0" max="2.0" step="0.1" value="1.6" class="range-input">
+                                <span class="range-value" id="penaltyValue">1.6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="generateBtn" class="generate-btn" disabled>
+                        <span class="btn-text">
+                            <i class="fas fa-magic"></i>
+                            Açıklama Oluştur
+                        </span>
+                        <div class="btn-loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            İşleniyor...
+                        </div>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Result Section -->
+            <div class="result-section" id="resultSection">
+                <div class="section-header">
+                    <i class="fas fa-comment-alt"></i>
+                    <h2>Oluşturulan Açıklama</h2>
+                </div>
+                <div class="result-container">
+                    <div class="result-content" id="resultContent">
+                        <div class="result-placeholder">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Açıklama burada görünecek</p>
+                        </div>
+                    </div>
+                    <button class="copy-btn" id="copyBtn" style="display: none;">
+                        <i class="fas fa-copy"></i>
+                        Kopyala
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+    
+
+    <script src="/static/assets/js/script.js"></script>
+</body>
+</html>

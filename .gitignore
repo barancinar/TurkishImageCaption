@@ -1,0 +1,22 @@
+# Sanal ortam
+venv/
+.env
+
+# Model ve checkpoint dosyaları
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.npz
+
+# Cache ve loglar
+__pycache__/
+*.log
+*.tmp
+.cache/
+*.pickle
+
+# IDE dosyaları
+.vscode/
+.idea/
