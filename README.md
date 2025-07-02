@@ -13,11 +13,12 @@ Built with the tools and technologies:
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
+-   [Overview](#overview)
+-   [Getting Started](#getting-started)
+-   [Prerequisites](#prerequisites)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Screenshots](#screenshots)
 
 ---
 
@@ -29,11 +30,11 @@ Built with the tools and technologies:
 
 This project aims to enhance image comprehension and accessibility for Turkish users through sophisticated AI models. The core features include:
 
-- **Multimodal Model Integration:** Combines CLIP and BERT to generate semantic, context-aware captions.
-- **Web Interface with Flask:** Provides an intuitive platform for uploading images and viewing descriptions.
-- **Modular Architecture:** Supports image pre-processing, tokenization, and domain-specific NLP tasks.
-- **Language-Specific Focus:** Optimized for Turkish, improving relevance and accessibility.
-- **Open-Source Flexibility:** Easily customizable and extensible for diverse AI applications.
+-   **Multimodal Model Integration:** Combines CLIP and BERT to generate semantic, context-aware captions.
+-   **Web Interface with Flask:** Provides an intuitive platform for uploading images and viewing descriptions.
+-   **Modular Architecture:** Supports image pre-processing, tokenization, and domain-specific NLP tasks.
+-   **Language-Specific Focus:** Optimized for Turkish, improving relevance and accessibility.
+-   **Open-Source Flexibility:** Easily customizable and extensible for diverse AI applications.
 
 ---
 
@@ -43,8 +44,8 @@ This project aims to enhance image comprehension and accessibility for Turkish u
 
 This project requires the following dependencies:
 
-- **Programming Language:** Python
-- **Package Manager:** Pip
+-   **Programming Language:** Python
+-   **Package Manager:** Pip
 
 ---
 
@@ -53,11 +54,13 @@ This project requires the following dependencies:
 Build TurkishImageCaption from the source and install dependencies:
 
 1. **Clone the repository:**
+
     ```bash
     git clone https://github.com/barancinar/TurkishImageCaption
     ```
 
 2. **Navigate to the project directory:**
+
     ```bash
     cd TurkishImageCaption
     ```
@@ -75,3 +78,17 @@ Run the project with:
 
 ```bash
 python app.py
+```
+
+---
+
+## Screenshots
+
+Home Page:
+![Home Page](screenshots/1.png)
+
+Image Upload:
+![Image Upload](screenshots/2.png)
+
+Caption Result:
+![Caption Result](screenshots/3.png)
