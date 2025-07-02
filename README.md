@@ -1,4 +1,4 @@
-# TURKISHIMAGECAPTION
+# TURKISH IMAGE CAPTION
 
 Bringing Turkish Images to Life with AI
 
@@ -74,4 +74,4 @@ Build TurkishImageCaption from the source and install dependencies:
 Run the project with:
 
 ```bash
-python [app.py](http://_vscodecontentref_/0)
+python app.py
