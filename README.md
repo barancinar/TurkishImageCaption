@@ -2,7 +2,6 @@
 
 Bringing Turkish Images to Life with AI
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-Web%20App-blue)](https://flask.palletsprojects.com/)
 [![Transformers](https://img.shields.io/badge/transformers-HuggingFace-yellow)](https://huggingface.co/transformers/)
@@ -19,7 +18,6 @@ Built with the tools and technologies:
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Testing](#testing)
 
 ---
 
